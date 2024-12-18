@@ -1,10 +1,27 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <v-app>
+    <v-main>
+      <RouterView/>
+    </v-main>
+  </v-app>
 </template>
+<script>
+
+import { RouterView } from 'vue-router';
+
+export default {
+  name: 'App',
+
+  components: {
+
+    RouterView
+  },
+
+  data: () => ({
+    //
+  }),
+}
+</script>
 
 <style lang="scss">
 #app {
